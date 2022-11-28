@@ -2,6 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['i.pravatar.cc'],
+  },
+  resolve: {
+    fallback: {
+      util: require.resolve('util/'),
+    },
+  },
 };
 
 module.exports = nextConfig;
