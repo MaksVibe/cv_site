@@ -1,9 +1,9 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import SidebarLayout, { ISidebarLayout } from './SidebarLayout';
 import { mockSidebarLayoutProps } from './SidebarLayout.mocks';
 
 export default {
-  title: 'sidebar/SidebarLayout',
+  title: 'layouts/SidebarLayout',
   component: SidebarLayout,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
