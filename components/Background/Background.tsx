@@ -51,6 +51,7 @@ const Background: React.FC<IBackground> = () => {
     }
 
     setInterval(draw, 50);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

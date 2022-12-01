@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Background from '../../Background/Background';
 import styles from './PrimaryLayout.module.css';
 
