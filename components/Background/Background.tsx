@@ -56,7 +56,7 @@ const Background: React.FC<IBackground> = () => {
   }, []);
 
   return (
-    <div className="w-full h-full bg-black fixed -z-10 inset-0 brightness-75">
+    <div className="w-full h-full bg-black fixed -z-10 inset-0 brightness-[0.5]">
       <canvas ref={canvasRef} />
     </div>
   );

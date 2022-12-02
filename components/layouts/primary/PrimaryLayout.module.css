@@ -1,9 +1,0 @@
-.main {
-  display: flex;
-  height: calc(100vh - 64px);
-}
-
-.main > section {
-  color: antiquewhite;
-  padding: 32px;
-}
