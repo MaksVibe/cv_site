@@ -1,4 +1,4 @@
-import Background from '../../Background/Background';
+import { Container } from './PrimaryLayout.styles';
 
 export interface IPrimaryLayout {
   children: any;
@@ -6,12 +6,7 @@ export interface IPrimaryLayout {
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
-    <>
-      <main className="flex h-screen text-white">
-        <Background />
-        {children}
-      </main>
-    </>
+      <Container>{children}</Container>
   );
 };
 
