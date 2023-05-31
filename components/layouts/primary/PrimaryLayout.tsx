@@ -1,3 +1,4 @@
+import Header from '../../Header/Header';
 import { Container } from './PrimaryLayout.styles';
 
 export interface IPrimaryLayout {
@@ -6,7 +7,12 @@ export interface IPrimaryLayout {
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
-      <Container>{children}</Container>
+    <>
+      <Header />
+      <Container>
+      {children}
+      </Container>
+    </>
   );
 };
 

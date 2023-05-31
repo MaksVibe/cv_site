@@ -1,14 +1,16 @@
 import Link from 'next/link';
-import { Wrapper } from './Header.styles';
+import { Wrapper, Nav } from './Header.styles';
 export interface IHeader {}
 
 const Header: React.FC<IHeader> = () => {
   return (
     <Wrapper>
-      <Link href="/">Home</Link>
-      <nav>
-        <Link href="/about">About</Link>
-      </nav>
+      <Link href="/">M.P.</Link>
+      <Nav>
+        <Link href="#portfolio">Portfolio</Link>
+        <Link href="#about">About</Link>
+        <Link href="#contacts">Contacts</Link>
+      </Nav>
     </Wrapper>
   );
 };

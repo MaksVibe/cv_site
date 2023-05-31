@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Bg = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #022721;
   position: fixed;
   z-index: -10;
