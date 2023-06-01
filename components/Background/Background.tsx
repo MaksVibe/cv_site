@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Bg } from './Background.styles';
+import { Bg, Filter } from './Background.styles';
 
 export interface IBackground {
-  children?: String;
+  children?: any;
 }
 
-const Background: React.FC<IBackground> = () => {
+const Background: React.FC<IBackground> = ({ children }) => {
   const [width, setWidth] = useState(globalThis?.window?.innerWidth);
   const [height, setHeight] = useState(globalThis?.window?.innerHeight);
   const katakana =
@@ -63,9 +63,15 @@ const Background: React.FC<IBackground> = () => {
   }, []);
 
   return (
-    <Bg>
-      <canvas ref={canvasRef} />
-    </Bg>
+    <Filter>
+      <Bg>
+        <canvas
+          ref={canvasRef}
+          style={{ position: 'absolute', zIndex: '-10', overflow: 'hidden' }}
+        />
+        {children}
+      </Bg>
+    </Filter>
   );
 };
 

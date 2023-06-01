@@ -4,9 +4,9 @@ import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section>
-      <Hero/>
-    </section>
+    <>
+      <Hero />
+    </>
   );
 };
 

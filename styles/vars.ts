@@ -6,4 +6,3 @@ export const desktopLargeWidth = 1140; //px
 export const mobilePadding = 10; //px
 export const tabletPadding = 20; //px
 export const desktopPadding = 40; //px
-

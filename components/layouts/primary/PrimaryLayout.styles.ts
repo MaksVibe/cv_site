@@ -5,7 +5,6 @@ import { desktopLargeWidth, desktopPadding, desktopWidth, mobilePadding, mobileW
 export const Container = styled.div`
     max-width: ${mobileWidth}px;
     padding: 0 ${mobilePadding}px;
-    height: 100vh;
     margin: 0 auto;
 
     @media screen and (${theme.media.tablet}) {
