@@ -50,7 +50,7 @@ export const fonts: Theme['fonts'] = {
         `,
     heading1: `
             font-family: '${FontNames.overpass}', sans-serif;
-            font-size: 82px;
+            font-size: 6rem;
             font-weight: 700;
             line-height: 1;
         `,
@@ -61,7 +61,7 @@ export const media: Theme['media'] = {
   desktopLarge: '(min-width: 1200px)',
   desktop: '(min-width: 992px)',
   tablet: '(min-width: 768px)',
-  mobile: '(min-width: 576px)',
+  mobile: '(max-width: 767px)',
 };
 
 const theme: Theme = {

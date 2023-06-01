@@ -1,8 +1,9 @@
+import ProjImg from '../../assets/images/cc-proj.png';
 import {
   Content,
   Description,
   Heading,
-  Img,
+  Imag,
   Wrapper,
 } from './LastProject.styles';
 
@@ -15,11 +16,18 @@ const LastProject: React.FC<ILastProject> = () => {
         href="https://www.unit9.com/project/coke-zero-sugar-take-a-taste"
         target="_blank"
       >
-        <Img />
+        <Imag
+          src={ProjImg.src}
+          alt="Coca-cola project"
+          width={400}
+          height={210}
+        />
       </a>
       <Content>
         <Heading>Last project</Heading>
-        <Description>Coke Zero Sugar | Mobile Game</Description>
+        <Description href="https://www.unit9.com/project/coke-zero-sugar-take-a-taste">
+          Coke Zero Sugar | Mobile Game
+        </Description>
       </Content>
     </Wrapper>
   );

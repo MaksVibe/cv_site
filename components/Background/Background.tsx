@@ -67,7 +67,13 @@ const Background: React.FC<IBackground> = ({ children }) => {
       <Bg>
         <canvas
           ref={canvasRef}
-          style={{ position: 'absolute', zIndex: '-10', overflow: 'hidden' }}
+          style={{
+            width: '100%',
+            height: '100%',
+            position: 'absolute',
+            zIndex: '-10',
+            overflow: 'hidden',
+          }}
         />
         {children}
       </Bg>

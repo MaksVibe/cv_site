@@ -1,10 +1,14 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { resetCSS } from './reset';
-import { fonts } from './theme';
+import theme, { fonts } from './theme';
 
 const style = css`
-  body {
+  html {
     ${fonts.spec.body}
+
+    @media screen and (${theme.media.mobile}) {
+      font-size: 12px;
+    }
   }
 
   h1 {
